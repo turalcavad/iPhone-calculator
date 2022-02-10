@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<link rel="stylesheet" href="./assets/styles/style.css" />
+	</head>
+	<body>
+		<div class="calc-container">
+			<div class="input-screen">
+				<div class="input-screen-content">
+					<div class="input-screen-text">
+						<span class="input-screen-text-value">0</span>
+						<span class="current-input"></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<button id="delete-button" class="calc-buttons grey-buttons">AC</button>
+				<button id="negative-button" class="calc-buttons grey-buttons">
+					+/-
+				</button>
+				<button id="remainder-button" class="calc-buttons grey-buttons">
+					%
+				</button>
+				<button class="calc-buttons button-orange operation-button">÷</button>
+			</div>
+
+			<div class="row">
+				<button class="calc-buttons button-numbers">7</button>
+				<button class="calc-buttons button-numbers">8</button>
+				<button class="calc-buttons button-numbers">9</button>
+				<button class="calc-buttons button-orange operation-button">X</button>
+			</div>
+
+			<div class="row">
+				<button class="calc-buttons button-numbers">4</button>
+				<button class="calc-buttons button-numbers">5</button>
+				<button class="calc-buttons button-numbers">6</button>
+				<button class="calc-buttons button-orange operation-button">-</button>
+			</div>
+
+			<div class="row">
+				<button class="calc-buttons button-numbers">1</button>
+				<button class="calc-buttons button-numbers">2</button>
+				<button class="calc-buttons button-numbers">3</button>
+				<button class="calc-buttons button-orange operation-button">+</button>
+			</div>
+
+			<div class="row">
+				<button class="calc-buttons zero-button button-numbers">0</button>
+				<button class="calc-buttons button-numbers">.</button>
+				<button id="equal-button" class="calc-buttons button-orange">=</button>
+			</div>
+		</div>
+		<script src="./assets/js/calc.js"></script>
+	</body>
+</html>
