@@ -123,6 +123,10 @@ numberButtons.forEach((button) =>
 operationButton.forEach((button) =>
 	button.addEventListener("click", function (e) {
 		currentInput.style.display = "none";
+		if (isNaN(parseFloat(inputValue.textContent))) {
+			resetCalc();
+			return;
+		}
 
 		operationCounter2++;
 
@@ -146,6 +150,7 @@ operationButton.forEach((button) =>
 		inputValue.textContent = "";
 		if (operationCounter == 0) {
 			currentInput.style.display = "inline";
+
 			currentInput.textContent = currentInputArr[0];
 		}
 		operationValue = e.target.textContent;
