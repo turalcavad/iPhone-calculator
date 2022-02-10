@@ -97,3 +97,11 @@ body {
 	font-size: 3.2rem;
 	padding-right: 1rem;
 }
+@media only screen and (max-width: 600px) {
+	body {
+		overflow: hidden;
+		height: 100vh;
+	}
+	.calc-container {
+	}
+}
